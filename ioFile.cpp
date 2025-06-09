@@ -28,4 +28,6 @@ int main() {
 
     //membuat objek input file stram
     ifstream infile;
+    //membuka file yang dituliskan
+    infile.open("contohfile.txt");
 }
