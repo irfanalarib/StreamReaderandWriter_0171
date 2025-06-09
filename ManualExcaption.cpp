@@ -12,4 +12,9 @@ int main()
         //blok ini akan dieksekusi
         cout << a << " : Pengecualian akan dieksekusi" << endl;
     }
+    catch (...) {
+        //*jika selain intefer maka block ini akan  di eksekusi*/
+        cout << "default pengecualian dieksekusi" << endl;
+    }
+    return 0;
 }
