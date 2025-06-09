@@ -5,5 +5,7 @@ using namespace std;
 
 int main() {
     string baris;
-    
+
+    //membuat ojek output file stram
+    ofstream outfile;
 }
