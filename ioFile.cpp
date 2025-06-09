@@ -8,4 +8,6 @@ int main() {
 
     //membuat ojek output file stram
     ofstream outfile;
+    //membuka file untuk ditulisi
+    outfile.open("contohfile.txt");
 }
