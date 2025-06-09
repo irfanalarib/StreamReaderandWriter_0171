@@ -25,4 +25,7 @@ int main() {
     }
     //selesai dalam menulis sekarang tutup filenya
     outfile.close();
+
+    //membuat objek input file stram
+    ifstream infile;
 }
