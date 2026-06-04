@@ -100,4 +100,12 @@ void perbaruiBarang() {
     int pilihanNomor;
     cout << "Pilih nomor barang yang ingin diubah: ";
     cin >> pilihanNomor;
+
+    if (pilihanNomor > 0 && pilihanNomor <= totalBarang) {
+        string namaBaru;
+        cout << "Masukkan nama baru untuk '" << tempGudang[pilihanNomor - 1] << "': ";
+        cin.ignore();
+        getline(cin, namaBaru);
+
+    }
 }
