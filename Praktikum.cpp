@@ -224,5 +224,10 @@ int main() {
                 break;
         }
 
+        if (pilihanMenu != 5) {
+            cout << "\nTekan Enter untuk kembali ke Menu Utama...";
+            cin.ignore();
+            cin.get();
+        }
     } 
 }
