@@ -63,5 +63,11 @@ void tambahBarang() {
         cout << "Masukkan Nama Barang Baru: ";
         cin.ignore();
         getline(cin, namaBarang);
+
+        if (!namaBarang.empty()) {
+            outfile << namaBarang << endl;
+            cout << "=> Sukses: '" << namaBarang << "' berhasil disimpan ke gudang." << endl;
+        }
+        outfile.close();
     }
 }
