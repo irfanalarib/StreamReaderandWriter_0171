@@ -159,5 +159,6 @@ void hapusBarang() {
         }
         outfile.close();
     }else {
+        cout << "=> Pilihan tidak valid!" << endl;
     }
 }
