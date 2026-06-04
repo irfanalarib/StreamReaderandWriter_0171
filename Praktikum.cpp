@@ -229,5 +229,5 @@ int main() {
             cin.ignore();
             cin.get();
         }
-    } 
+    } while (pilihanMenu != 5);
 }
