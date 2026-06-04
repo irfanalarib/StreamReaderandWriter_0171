@@ -86,4 +86,11 @@ void perbaruiBarang() {
     string baris;
     string tempGudang[100];
     int totalBarang = 0;
+
+    while (getline(infile, baris)) {
+        if (!baris.empty()) {
+            tempGudang[totalBarang] = baris;
+            totalBarang++;
+        }
+    }
 }
