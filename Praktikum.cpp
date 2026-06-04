@@ -50,5 +50,8 @@ void tampilkanGudang() {
             cout << "[ Gudang Kosong / Belum Ada Data ]" << endl;
         }
         infile.close();
-    } else
+    } else {
+        cout << "[ Catatan: File " << FILE_GUDANG << " belum dibuat. Silakan tambah barang terlebih dahulu. ]" << endl;
+    }
+    cout << "=========================================" << endl;
 }
