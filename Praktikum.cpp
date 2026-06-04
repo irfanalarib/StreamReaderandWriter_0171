@@ -27,3 +27,10 @@ public:
 };
 
 const string FILE_GUDANG = "gudang.txt";
+
+void tampilkanGudang() {
+    ifstream infile(FILE_GUDANG);
+    string baris;
+    int nomor = 1;
+
+}
