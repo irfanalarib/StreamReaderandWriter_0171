@@ -55,3 +55,13 @@ void tampilkanGudang() {
     }
     cout << "=========================================" << endl;
 }
+
+void tambahBarang() {
+    ofstream outfile(FILE_GUDANG, ios::app); 
+    if (outfile.is_open()) {
+        string namaBarang;
+        cout << "Masukkan Nama Barang Baru: ";
+        cin.ignore();
+        getline(cin, namaBarang);
+    }
+}
