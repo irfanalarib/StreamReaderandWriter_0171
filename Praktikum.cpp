@@ -15,4 +15,13 @@ public:
     TokoElektronik() {
         etalaseBarang = {"Laptop ASUS", "Smartphone Samsung", "Smart TV LG"};
     }
+
+    string ambilBarangDariEtalase(size_t nomorRak) {
+        try {
+            return etalaseBarang.at(nomorRak);
+        }
+        catch (const out_of_range& e) {
+            throw runtime_error("Gagal Mengambil Barang : Rak nomor " + to_string(nomorRak) + " kosong atau tidak tersedia!");
+        }
+    }
 };
