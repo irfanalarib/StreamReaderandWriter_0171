@@ -15,4 +15,6 @@ int main(){
     ofstream outfile;
     //menuju kesebuah nama file dalam ekstensi .txt
     outfile.open(NamaFile + ".txt", ios::out);
+
+    cout << ">= Menulis file, \'q\' untuk keluar" << endl;
 }
