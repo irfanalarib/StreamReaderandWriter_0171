@@ -203,5 +203,26 @@ int main() {
         cout << "Pilih opsi menu (1-5): ";
         cin >> pilihanMenu;
 
+        switch (pilihanMenu) {
+            case 1:
+                tambahBarang();
+                break;
+            case 2:
+                perbaruiBarang();
+                break;
+            case 3:
+                hapusBarang();
+                break;
+            case 4:
+                jalankanSimulasiEtalase(gibranJaya);
+                break;
+            case 5:
+                cout << "\nTerima kasih telah menggunakan sistem Gibran Jaya!" << endl;
+                break;
+            default:
+                cout << "\n=> Pilihan menu salah! Silakan coba lagi." << endl;
+                break;
+        }
+
     } 
 }
