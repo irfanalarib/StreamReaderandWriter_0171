@@ -73,3 +73,13 @@ void tambahBarang() {
         cout << "=> Error: Gagal membuka file gudang!" << endl;
     }
 }
+
+void perbaruiBarang() {
+    tampilkanGudang();
+    
+    ifstream infile(FILE_GUDANG);
+    if (!infile.is_open()) {
+        cout << "=> Gagal memperbarui, file tidak ditemukan." << endl;
+        return;
+    }
+}
