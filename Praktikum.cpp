@@ -107,5 +107,7 @@ void perbaruiBarang() {
         cin.ignore();
         getline(cin, namaBaru);
 
+        tempGudang[pilihanNomor - 1] = namaBaru;
+
     }
 }
