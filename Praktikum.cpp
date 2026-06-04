@@ -25,3 +25,5 @@ public:
         }
     }
 };
+
+const string FILE_GUDANG = "gudang.txt";
