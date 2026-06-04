@@ -120,3 +120,13 @@ void perbaruiBarang() {
         cout << "=> Pilihan tidak valid!" << endl;
     }
 }
+
+void hapusBarang() {
+    tampilkanGudang();
+
+    ifstream infile(FILE_GUDANG);
+    if (!infile.is_open()) {
+        cout << "=> Gagal menghapus, file tidak ditemukan." << endl;
+        return;
+    }
+}
