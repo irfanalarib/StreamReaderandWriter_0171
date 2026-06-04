@@ -10,4 +10,9 @@ using namespace std;
 class TokoElektronik {
 private:
     array<string, 3> etalaseBarang;
+
+public:
+    TokoElektronik() {
+        etalaseBarang = {"Laptop ASUS", "Smartphone Samsung", "Smart TV LG"};
+    }
 };
