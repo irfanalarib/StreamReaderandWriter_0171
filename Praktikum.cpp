@@ -109,5 +109,11 @@ void perbaruiBarang() {
 
         tempGudang[pilihanNomor - 1] = namaBaru;
 
+        ofstream outfile(FILE_GUDANG, ios::out);
+        for (int i = 0; i < totalBarang; i++) {
+            outfile << tempGudang[i] << endl;
+        }
+        outfile.close();
+        cout << "=> Sukses: Data barang berhasil diperbarui!" << endl;
     }
 }
