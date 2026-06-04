@@ -6,3 +6,8 @@
 #include <stdexcept>
 
 using namespace std;
+
+class TokoElektronik {
+private:
+    array<string, 3> etalaseBarang;
+};
