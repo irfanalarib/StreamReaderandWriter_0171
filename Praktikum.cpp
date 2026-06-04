@@ -46,5 +46,9 @@ void tampilkanGudang() {
                 adaBarang = true;
             }
         }
-    } else 
+        if (!adaBarang) {
+            cout << "[ Gudang Kosong / Belum Ada Data ]" << endl;
+        }
+        infile.close();
+    } else
 }
