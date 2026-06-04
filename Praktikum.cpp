@@ -129,4 +129,8 @@ void hapusBarang() {
         cout << "=> Gagal menghapus, file tidak ditemukan." << endl;
         return;
     }
+    
+    string baris;
+    string tempGudang[100];
+    int totalBarang = 0;
 }
