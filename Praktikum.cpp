@@ -141,4 +141,6 @@ void hapusBarang() {
         }
     }
     infile.close();
+
+    if (totalBarang == 0) return;
 }
