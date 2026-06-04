@@ -32,4 +32,6 @@ int main(){
     //menutup file
     outfile.close();
 
+    //membuka file dalam mode membaca
+    ifstream infile;
 }
