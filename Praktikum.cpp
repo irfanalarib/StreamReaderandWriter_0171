@@ -143,4 +143,8 @@ void hapusBarang() {
     infile.close();
 
     if (totalBarang == 0) return;
+
+    int pilihanNomor;
+    cout << "Pilih nomor barang yang ingin dihapus: ";
+    cin >> pilihanNomor;
 }
