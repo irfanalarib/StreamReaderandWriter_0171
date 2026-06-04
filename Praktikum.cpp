@@ -140,4 +140,5 @@ void hapusBarang() {
             totalBarang++;
         }
     }
+    infile.close();
 }
