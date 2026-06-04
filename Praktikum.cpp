@@ -147,4 +147,17 @@ void hapusBarang() {
     int pilihanNomor;
     cout << "Pilih nomor barang yang ingin dihapus: ";
     cin >> pilihanNomor;
+
+    if (pilihanNomor > 0 && pilihanNomor <= totalBarang) {
+        cout << "=> Sukses: '" << tempGudang[pilihanNomor - 1] << "' berhasil dihapus." << endl;
+
+        ofstream outfile(FILE_GUDANG, ios::out);
+        for (int i = 0; i < totalBarang; i++) {
+            if (i != (pilihanNomor - 1)) {
+                outfile << tempGudang[i] << endl;
+            }
+        }
+        outfile.close();
+    }else {
+    }
 }
