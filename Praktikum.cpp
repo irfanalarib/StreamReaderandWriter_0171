@@ -189,4 +189,19 @@ void jalankanSimulasiEtalase(TokoElektronik& toko) {
 int main() {
     TokoElektronik gibranJaya; 
     int pilihanMenu;
+
+    do {
+        // Read: Menampilkan daftar barang secara otomatis saat menu dibuka
+        tampilkanGudang();
+
+        cout << "\n=== SISTEM MANAJEMEN TOKO \"GIBRAN JAYA\" ===" << endl;
+        cout << "1. Tambah Barang Baru Ke Gudang (Create)" << endl;
+        cout << "2. Perbarui Data Barang Gudang (Update)" << endl;
+        cout << "3. Hapus Data Barang Gudang (Delete)" << endl;
+        cout << "4. Jalankan Simulasi Etalase (Uji Exception)" << endl;
+        cout << "5. Keluar Aplikasi" << endl;
+        cout << "Pilih opsi menu (1-5): ";
+        cin >> pilihanMenu;
+
+    } 
 }
