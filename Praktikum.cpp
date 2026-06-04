@@ -93,4 +93,6 @@ void perbaruiBarang() {
             totalBarang++;
         }
     }
+    infile.close();
+
 }
