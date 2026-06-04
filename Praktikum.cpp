@@ -95,4 +95,5 @@ void perbaruiBarang() {
     }
     infile.close();
 
+    if (totalBarang == 0) return;
 }
