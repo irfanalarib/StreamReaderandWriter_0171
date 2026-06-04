@@ -109,11 +109,14 @@ void perbaruiBarang() {
 
         tempGudang[pilihanNomor - 1] = namaBaru;
 
+        // Tulis ulang seluruh data baru ke file (ios::out menimpa file lama)
         ofstream outfile(FILE_GUDANG, ios::out);
         for (int i = 0; i < totalBarang; i++) {
             outfile << tempGudang[i] << endl;
         }
         outfile.close();
         cout << "=> Sukses: Data barang berhasil diperbarui!" << endl;
+    } else {
+        cout << "=> Pilihan tidak valid!" << endl;
     }
 }
