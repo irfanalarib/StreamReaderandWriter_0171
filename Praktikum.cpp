@@ -185,3 +185,8 @@ void jalankanSimulasiEtalase(TokoElektronik& toko) {
     }
     cout << "\n=====================================" << endl;
 }
+
+int main() {
+    TokoElektronik gibranJaya; 
+    int pilihanMenu;
+}
