@@ -162,3 +162,16 @@ void hapusBarang() {
         cout << "=> Pilihan tidak valid!" << endl;
     }
 }
+
+void jalankanSimulasiEtalase(TokoElektronik& toko) {
+    cout << "\n=== MEMULAI SIMULASI ETALASE TOKO ===" << endl;
+
+    cout << "\n[Skenario 1] Mengambil barang di rak indeks ke-1..." << endl;
+    try {
+        string barang = toko.ambilBarangDariEtalase(1);
+        cout << "Hasil Skenario 1 (Sukses): Barang ditemukan -> " << barang << endl;
+    }
+    catch (const runtime_error& e) {
+        cout << "Hasil Skenario 1 (Gagal): " << e.what() << endl;
+    }
+}
