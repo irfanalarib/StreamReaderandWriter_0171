@@ -13,4 +13,9 @@ int main(){
     catch (int a) {
         cout << "Pengecualian akan di eksekusi: " << endl;
     }
+    //kondisi jika throw yang bertipe selain integer
+    catch (...) {
+        cout << "Default Pengecualian  di eksekusi: " << endl;
+    }
+    return 0;
 }
