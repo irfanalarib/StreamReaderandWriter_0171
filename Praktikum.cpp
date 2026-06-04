@@ -230,4 +230,5 @@ int main() {
             cin.get();
         }
     } while (pilihanMenu != 5);
+    return 0;
 }
