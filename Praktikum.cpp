@@ -69,5 +69,7 @@ void tambahBarang() {
             cout << "=> Sukses: '" << namaBarang << "' berhasil disimpan ke gudang." << endl;
         }
         outfile.close();
+    } else {
+        cout << "=> Error: Gagal membuka file gudang!" << endl;
     }
 }
