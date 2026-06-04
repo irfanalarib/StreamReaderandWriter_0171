@@ -33,4 +33,8 @@ void tampilkanGudang() {
     string baris;
     int nomor = 1;
 
+    cout << "\n=========================================" << endl;
+    cout << "      DAFTAR BARANG DI GUDANG (FILE)     " << endl;
+    cout << "=========================================" << endl;
+
 }
