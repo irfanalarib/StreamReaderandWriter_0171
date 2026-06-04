@@ -37,4 +37,14 @@ void tampilkanGudang() {
     cout << "      DAFTAR BARANG DI GUDANG (FILE)     " << endl;
     cout << "=========================================" << endl;
 
+    if (infile.is_open()) {
+        bool adaBarang = false;
+        while (getline(infile, baris)) {
+            if (!baris.empty()) {
+                cout << nomor << ". " << baris << endl;
+                nomor++;
+                adaBarang = true;
+            }
+        }
+    } else 
 }
